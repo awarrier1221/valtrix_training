@@ -1,0 +1,22 @@
+ENTRY("_start")
+
+SECTIONS
+{
+    BOOTUP_0 0x80000000 : AT(0x80000000)
+    {
+        */start.o (.text)
+        */start.o (.data)
+        */start.o (*)
+     
+        */main.o (.text)
+        */main.o (.data)
+        */main.o (*)
+
+    }
+USER 0xC0000000 : AT(0x90000000)
+    {
+        */user.o (.text)
+        */user.o (.data)
+        */user.o (*)
+    }
+}
