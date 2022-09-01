@@ -37,11 +37,6 @@ exception_handling:
     mret
 
     .data
-    .balign 0x10
-
-result:
-    .dword 0
-
     .align 8
 
 stack_start:
