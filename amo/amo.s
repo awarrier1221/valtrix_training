@@ -28,7 +28,6 @@ amoswap.w.rl x0,x0,0(x12)
 
 exit:
     .data
-    .balign 0x10
 
 .balign 8
 lock:
