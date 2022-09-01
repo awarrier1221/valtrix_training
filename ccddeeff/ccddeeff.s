@@ -25,8 +25,5 @@ loop:lbu x11,0(x10)   //takes 8 bit
 
 var_1:
     .word 0xccddeeff  //convert to cddeeff0
-    
-result:
-    .dword 0
 
     .end
